@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: com.raeen.talkify.Server.Controller.ChatControllerWebSocketTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.79 s <<< FAILURE! -- in com.raeen.talkify.Server.Controller.ChatControllerWebSocketTest
+com.raeen.talkify.Server.Controller.ChatControllerWebSocketTest.testMessageStatusUpdate -- Time elapsed: 0.571 s <<< FAILURE!
+Wanted but not invoked:
+messageService bean.updateStatus(
+    999L,
+    "READ"
+);
+-> at com.raeen.talkify.Server.Service.MessageService.updateStatus(MessageService.java:33)
+Actually, there were zero interactions with this mock.
+
+	at com.raeen.talkify.Server.Service.MessageService.updateStatus(MessageService.java:33)
+	at com.raeen.talkify.Server.Controller.ChatControllerWebSocketTest.testMessageStatusUpdate(ChatControllerWebSocketTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.raeen.talkify.Server.Controller.ChatControllerWebSocketTest.testProcessMessage -- Time elapsed: 1.037 s <<< FAILURE!
+Wanted but not invoked:
+messageService bean.saveMessage(
+    1L,
+    2L,
+    "Hello Chat!"
+);
+-> at com.raeen.talkify.Server.Service.MessageService.saveMessage(MessageService.java:18)
+Actually, there were zero interactions with this mock.
+
+	at com.raeen.talkify.Server.Service.MessageService.saveMessage(MessageService.java:18)
+	at com.raeen.talkify.Server.Controller.ChatControllerWebSocketTest.testProcessMessage(ChatControllerWebSocketTest.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
