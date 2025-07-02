@@ -1,13 +1,7 @@
-server:
-  port: 8080
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-
 spring:
+  config:
+    import: optional:file:.env
+
   application:
     name: talkify-server
 
@@ -22,4 +16,13 @@ spring:
     show-sql: false
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
