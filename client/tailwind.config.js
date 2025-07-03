@@ -9,9 +9,9 @@ export default {
       colors: {
         primary: '#344e41',
         secondary: '#3a5a40',
-        teritory: '#588157',
-        forthary: '#a3b18a',
-        light: '#dad7cd',
+        teritory: '#606c38',
+        forthary: '#588157',
+        light: '#a3b18a',
         dark: '#0f172a',   // ✅ Fixed hex code
       },
       fontFamily: {

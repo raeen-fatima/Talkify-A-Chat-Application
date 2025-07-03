@@ -44,19 +44,19 @@ function ServicePage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-3">
-                <FaComments className="text-teritory text-xl" />
+                <FaComments className="text-primary text-xl" />
                 <span className="text-gray-800 font-medium">Instant Messaging</span>
               </div>
               <div className="flex items-center gap-3">
-                <FaUsers className="text-teritory text-xl" />
+                <FaUsers className="text-primary text-xl" />
                 <span className="text-gray-800 font-medium">Team Collaboration</span>
               </div>
               <div className="flex items-center gap-3">
-                <FaLock className="text-teritory text-xl" />
+                <FaLock className="text-primary text-xl" />
                 <span className="text-gray-800 font-medium">Secure Data</span>
               </div>
               <div className="flex items-center gap-3">
-                <FaRocket className="text-teritory text-xl" />
+                <FaRocket className="text-primary text-xl" />
                 <span className="text-gray-800 font-medium">Fast Performance</span>
               </div>
             </div>
@@ -69,7 +69,7 @@ function ServicePage() {
             transition={{ duration: 0.8 }}
             className="flex justify-center"
           >
-            <div className="rounded-2xl overflow-hidden shadow-xl border border-primary/80 backdrop-blur-xl bg-white/20">
+            <div className=" rounded-2xl overflow-hidden shadow-xl border border-primary/80 backdrop-blur-xl bg-white/20">
               <img
                 src="https://repository-images.githubusercontent.com/255596263/1d954b80-83ee-11ea-846e-92612af21968"
                 alt="Team Collaboration"
@@ -126,7 +126,7 @@ function ServicePage() {
               ].map((feature, i) => (
                 <motion.div
                   key={i}
-                  className="p-4 bg-white/70 backdrop-blur-lg rounded-lg shadow border border-primary/100 hover:scale-105 transition-transform duration-300"
+                  className="p-4 bg-white/70 backdrop-blur-lg rounded-lg shadow border border-light/100 hover:scale-105 transition-transform duration-300"
                   whileHover={{ scale: 1.05 }}
                 >
                   {feature.icon}
@@ -153,24 +153,24 @@ function ServicePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
               {
-                icon: <FaMobileAlt className="text-teritory text-3xl mb-4" />,
+                icon: <FaMobileAlt className="text-primary text-3xl mb-4" />,
                 title: "Mobile Ready",
                 desc: "Stay connected on any device."
               },
               {
-                icon: <FaUsers className="text-teritory text-3xl mb-4" />,
+                icon: <FaUsers className="text-primary text-3xl mb-4" />,
                 title: "Community Building",
                 desc: "Grow your audience and engage easily."
               },
               {
-                icon: <FaLock className="text-teritory text-3xl mb-4" />,
+                icon: <FaLock className="text-primary text-3xl mb-4" />,
                 title: "Advanced Security",
                 desc: "Protect your conversations."
               }
             ].map((service, i) => (
               <motion.div
                 key={i}
-                className="p-6 bg-white/70 backdrop-blur-lg rounded-lg shadow-lg border border-primary/20 hover:scale-105 transition-transform duration-300"
+                className="p-6 bg-white/70 backdrop-blur-lg rounded-lg shadow-lg border border-light hover:scale-105 transition-transform duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}

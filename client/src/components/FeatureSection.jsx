@@ -59,11 +59,11 @@ const FeaturesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex-shrink-0 w-full md:w-1/2">
+          <div className="flex-shrink-0 w-full md:w-1/2 ">
             <img
               src="https://st3.depositphotos.com/1092019/12817/i/450/depositphotos_128176210-stock-photo-index-card-with-inscription-features.jpg"
               alt="Talkify Collaboration"
-              className="rounded-2xl shadow-lg w-full object-cover"
+              className="rounded-2xl shadow-lg w-full object-cover border border-teritory hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
@@ -106,7 +106,7 @@ const FeaturesSection = () => {
             return (
               <motion.div
                 key={index}
-                className="group relative flex flex-col items-center justify-center text-center p-4 w-full aspect-square bg-white/70 backdrop-blur-md border border-gray-200 rounded-xl shadow hover:shadow-lg hover:scale-105 transition"
+                className="group relative flex flex-col items-center justify-center text-center p-4 w-full aspect-square bg-white/70 backdrop-blur-md border border-light rounded-xl shadow hover:shadow-lg hover:scale-105 transition"
               >
                 <div
                   className={`mb-2 w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br ${feature.color} text-white shadow`}

@@ -63,7 +63,7 @@ const Services = () => {
             return (
               <motion.div
                 key={i}
-                className="group relative bg-white/60 backdrop-blur-lg border border-primary/10 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-[1.03] transition-transform duration-300 overflow-hidden"
+                className="group relative bg-white/60 backdrop-blur-lg border border-light rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-[1.03] transition-transform duration-300 overflow-hidden"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}

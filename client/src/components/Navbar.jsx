@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { BsWechat } from "react-icons/bs";
 
 const Navbar = () => {
   const navigation = [
@@ -17,17 +18,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <svg
-              className="w-8 h-8 text-primary"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7h20L12 2z" />
-              <path d="M2 7v13h20V7" />
-              <path d="M16 21V9H8v12" />
-            </svg>
+            <BsWechat className="text-primary text-2xl" />
             <span className="font-bold text-xl">Talkify</span>
           </Link>
 

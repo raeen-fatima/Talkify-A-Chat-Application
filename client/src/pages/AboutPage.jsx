@@ -14,7 +14,7 @@ const AboutPage = () => {
       {/* Hero */}
       <section className="relative py-20 flex items-center justify-center">
         <motion.div
-          className="backdrop-blur-lg bg-white/70 border border-gray-200 rounded-xl p-8 md:p-12 max-w-3xl mx-auto text-center shadow-lg"
+          className="backdrop-blur-lg bg-white/70 border border-teritory rounded-xl p-8 md:p-12 max-w-3xl mx-auto text-center shadow-lg"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -36,7 +36,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-primary mb-4">Our Story</h2>
+            <h2 className="text-4xl font-extrabold text-primary mb-4">Our Story</h2>
             <p className="text-gray-700 text-lg mb-2">
               Founded with a vision to simplify communication, Talkify has grown into a global platform.
             </p>
@@ -47,7 +47,7 @@ const AboutPage = () => {
           <motion.img
             src="https://meritstory.com/wp-content/uploads/2023/06/video-cover-blog-single.jpg"
             alt="Our Story"
-            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg shadow-lg hover:scale-105 border border-light transition-transform duration-300"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -61,7 +61,7 @@ const AboutPage = () => {
           <motion.img
             src="https://thumbs.dreamstime.com/b/card-text-our-mission-white-background-near-office-supplies-alarm-clock-business-card-text-our-mission-231602401.jpg"
             alt="Our Mission"
-            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg shadow-lg border border-light hover:scale-105 transition-transform duration-300"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -71,7 +71,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-primary mb-4">Our Mission</h2>
+            <h2 className="text-4xl font-extrabold text-primary mb-4">Our Mission</h2>
             <p className="text-gray-700 text-lg mb-2">
               To build an inclusive and powerful platform that helps teams thrive.
             </p>
@@ -90,7 +90,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-primary mb-4">Our Vision</h2>
+            <h2 className="text-4xl font-extrabold text-primary mb-4">Our Vision</h2>
             <p className="text-gray-700 text-lg mb-2">
               We envision a world where distance is irrelevant, and ideas flow freely.
             </p>
@@ -101,7 +101,7 @@ const AboutPage = () => {
           <motion.img
             src="https://t3.ftcdn.net/jpg/04/18/52/88/360_F_418528804_xgyFvVsMSHeWk1UgDtR9aoccqSC7BrHy.jpg"
             alt="Our Vision"
-            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg shadow-lg border border-light hover:scale-105 transition-transform duration-300"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -112,7 +112,7 @@ const AboutPage = () => {
       {/* Core Values */}
       <section className="py-20 bg-[#f1f8e9]">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-primary mb-12">Our Core Values</h2>
+          <h2 className="text-4xl font-extrabold text-primary mb-12">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -133,7 +133,7 @@ const AboutPage = () => {
             ].map((value, index) => (
               <motion.div
                 key={index}
-                className="p-6 bg-white/70 backdrop-blur-md border border-gray-200 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
+                className="p-6 bg-white/70 backdrop-blur-md border border-light rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -150,12 +150,12 @@ const AboutPage = () => {
       {/* Meet the Team */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-primary mb-12">Meet the Team</h2>
+          <h2 className="text-4xl font-extrabold font-dm_serif  text-primary mb-12">Meet our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {["Alice", "Bob", "Charlie"].map((name, index) => (
               <motion.div
                 key={name}
-                className="p-6 bg-white/80 backdrop-blur-md border border-gray-100 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                className="p-6 bg-primary/80 backdrop-blur-md border border-gray-100 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -163,10 +163,10 @@ const AboutPage = () => {
                 <img
                   src={`https://i.pravatar.cc/150?img=${index + 5}`}
                   alt={name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-light shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
                 <h3 className="text-lg font-semibold">{name}</h3>
-                <p className="text-gray-500">Team Member</p>
+                <p className="text-gray-300">Team Member</p>
               </motion.div>
             ))}
           </div>
