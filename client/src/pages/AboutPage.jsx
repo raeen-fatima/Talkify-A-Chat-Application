@@ -8,11 +8,12 @@ import { FaHandsHelping, FaLightbulb, FaHeart } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
-    <div className="bg-[#f9f9f9] min-h-screen">
+    <div>
       <Navbar />
 
+      <section className="bg-[#f9f9f9] min-h-screen relative py-20 flex items-center justify-center">
       {/* Hero */}
-      <section className="relative py-20 flex items-center justify-center">
+
         <motion.div
           className="backdrop-blur-lg bg-white/70 border border-teritory rounded-xl p-8 md:p-12 max-w-3xl mx-auto text-center shadow-lg"
           initial={{ opacity: 0, y: -30 }}

@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -12,8 +11,6 @@ import {
 const Contact = () => {
   return (
     <div className="bg-gradient-to-br from-[#f1f8e9] via-[#fffde7] to-[#e3f2fd] min-h-screen">
-      <Navbar />
-
       {/* Header */}
       <section className="py-10 mt-16 text-center">
         <motion.h1
