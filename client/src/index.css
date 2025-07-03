@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=DM+Serif+Text:ital@0;1&family=Merienda:wght@300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "/node_modules/slick-carousel/slick/slick.css";
+@import "/node_modules/slick-carousel/slick/slick-theme.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'DM Serif Text', serif;
+    /* font-family: 'Condiment', cursive; */
+    /* font-family: 'Merienda', cursive; */
+    /* font-family: 'Volkhov', serif; */
+}
