@@ -22,7 +22,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Home
               </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/about"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 About Us
               </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/contact"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Contact
               </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/pricing"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Pricing
               </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/blog"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Blog
               </Link>
@@ -69,7 +69,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/help"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Help Center
               </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/privacy"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Privacy Policy
               </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/terms"
-                className="hover:text-yellow-400 transition-colors duration-200"
+                className="hover:text-light transition-colors duration-200"
               >
                 Terms of Service
               </Link>
@@ -100,21 +100,21 @@ const Footer = () => {
             <a
               href="#"
               aria-label="Facebook"
-              className="hover:text-yellow-400 transition-colors duration-200 text-xl"
+              className="hover:text-light transition-colors duration-200 text-xl"
             >
               <FaFacebookF />
             </a>
             <a
               href="#"
               aria-label="Twitter"
-              className="hover:text-yellow-400 transition-colors duration-200 text-xl"
+              className="hover:text-light transition-colors duration-200 text-xl"
             >
               <FaTwitter />
             </a>
             <a
               href="#"
               aria-label="LinkedIn"
-              className="hover:text-yellow-400 transition-colors duration-200 text-xl"
+              className="hover:text-light transition-colors duration-200 text-xl"
             >
               <FaLinkedinIn />
             </a>
