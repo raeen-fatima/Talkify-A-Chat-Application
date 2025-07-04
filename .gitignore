@@ -27,7 +27,7 @@ target/
 out/
 logs/
 spring.log
-
+application.yml
 # React specific (already included above)
 # node_modules/
 # build/

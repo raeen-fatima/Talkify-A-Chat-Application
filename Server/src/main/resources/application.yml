@@ -1,14 +1,11 @@
 spring:
-  config:
-    import: optional:file:.env
-
   application:
     name: talkify-server
 
   datasource:
-    url: jdbc:mysql://${DB_HOST}:${DB_PORT:3306}/${DB_NAME}
-    username: ${DB_USER}
-    password: ${DB_PASS}
+    url: jdbc:mysql://talkify-db.cxy26gic02l1.eu-north-1.rds.amazonaws.com:3306/talkify?useSSL=false
+    username: admin
+    password: MissRaeen
 
   jpa:
     hibernate:
@@ -26,3 +23,7 @@ management:
     web:
       exposure:
         include: "*"
+
+custom:
+  jwt:
+    secret: 3JrD1GQqLwM+aEbY3sBlxGqKtRzuKTq+5td2DJoW9Fo

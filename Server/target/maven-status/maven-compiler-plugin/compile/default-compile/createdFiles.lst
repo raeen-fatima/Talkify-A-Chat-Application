@@ -1,6 +1,8 @@
 com\raeen\talkify\Server\Controller\NotificationController.class
+com\raeen\talkify\Server\Config\CorsConfig.class
 com\raeen\talkify\Server\Repository\GroupRepository.class
 com\raeen\talkify\Server\Repository\GroupMessageRepository.class
+com\raeen\talkify\Server\Config\CorsConfig$1.class
 com\raeen\talkify\Server\Model\Group.class
 com\raeen\talkify\Server\Model\Role.class
 com\raeen\talkify\Server\Service\GroupMessageService.class

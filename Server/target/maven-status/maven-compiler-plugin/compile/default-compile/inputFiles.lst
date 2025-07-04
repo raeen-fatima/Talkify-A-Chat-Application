@@ -10,6 +10,7 @@ D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Repository\Gro
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Service\GroupMessageService.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Service\AuthenticationService.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Service\GroupService.java
+D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Config\CorsConfig.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Exception\GlobalExceptionHandler.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Model\Message.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Service\JwtService.java
