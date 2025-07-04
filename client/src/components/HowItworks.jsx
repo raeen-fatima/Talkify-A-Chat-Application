@@ -34,7 +34,7 @@ const HowItWorks = () => {
     <section className="py-20 bg-gradient-to-br from-[#f1f8e9] via-[#e0f7fa] to-[#fffde7]">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4"
+          className="text-3xl md:text-4xl font-extrabold font-rocker text-gray-800 mb-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -56,7 +56,7 @@ const HowItWorks = () => {
             return (
               <motion.div
                 key={index}
-                className="relative bg-white/60 backdrop-blur-xl border border-teritory rounded-2xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl transition-all cursor-pointer group"
+                className="relative bg-teritory/60 backdrop-blur-xl border border-teritory rounded p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl transition-all cursor-pointer group"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.05, y: -4 }}

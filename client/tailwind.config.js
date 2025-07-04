@@ -18,7 +18,10 @@ export default {
         volkhov: ['Volkhov', 'serif'],
         dm_serif: ['DM Serif Text', 'serif'],
         condiment: ['Condiment', 'cursive'],
-        merienda: ['Merienda', 'cursive']
+        merienda: ['Merienda', 'cursive'],
+        alegreya: ["Alegreya", "serif"],
+        bodoni: ["Bodoni Moda", "serif"],
+        rocker: ["New Rocker", "cursive"],
       },
     },
   },

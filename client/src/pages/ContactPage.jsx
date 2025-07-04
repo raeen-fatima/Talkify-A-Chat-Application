@@ -5,11 +5,9 @@ import Contact from '../components/Contact'
 function ContactPage() {
   return (
     <div>
-      <>
       <Navbar />
       <Contact />
       <Footer />
-      </>
       
     </div>
   )

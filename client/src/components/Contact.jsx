@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-br from-[#f1f8e9] via-[#fffde7] to-[#e3f2fd] min-h-screen">
+    <div className="bg-gradient-to-br from-[#f1f8e9] via-[#fffde7] to-[#e3f2fd] min-h-screen w-full overflow-x-hidden">
       {/* Header */}
       <section className="py-10 mt-16 text-center">
         <motion.h1
@@ -52,7 +52,7 @@ const Contact = () => {
         ].map((item, index) => (
           <motion.div
             key={index}
-            className="p-6 bg-white/70 backdrop-blur-md border border-light rounded-xl shadow-lg text-center hover:scale-105 hover:shadow-2xl transition-all duration-300"
+            className="p-6 bg-light/70 backdrop-blur-md border border-forthary rounded shadow-lg text-center hover:scale-105 hover:shadow-2xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -65,10 +65,23 @@ const Contact = () => {
       </section>
 
       {/* Contact Form + Illustration */}
-      <section className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 pb-20">
+      <section className="max-w-7xl mx-auto border border-light px-4 grid grid-cols-1 md:grid-cols-2 gap-12 p-10">
+                {/* Illustration */}
+        <motion.div
+          className="flex items-center justify-center"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src="https://images.unsplash.com/photo-1653289755854-a41949e96282?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Contact Illustration"
+            className="w-full"
+          />
+        </motion.div>
         {/* Form */}
         <motion.div
-          className="bg-forthary/80 backdrop-blur-lg border border-primary rounded-xl shadow-lg p-8 space-y-6"
+          className=" backdrop-blur-lg  p-4 space-y-6"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -79,7 +92,7 @@ const Contact = () => {
               <FaUser className="absolute left-3 top-3 text-primary" />
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="John Doe"
                 className="w-full pl-10 border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-primary transition"
               />
             </div>
@@ -87,7 +100,7 @@ const Contact = () => {
               <FaEnvelope className="absolute left-3 top-3 text-primary" />
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="john@example.com"
                 className="w-full pl-10 border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-primary transition"
               />
             </div>
@@ -101,32 +114,20 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-primary text-white py-3 rounded font-semibold hover:bg-secondary transition"
+              className="w-full bg-primary text-black py-3 rounded font-semibold hover:bg-secondary transition shadow-lg"
             >
               Send Message
             </button>
           </form>
         </motion.div>
 
-        {/* Illustration */}
-        <motion.div
-          className="flex items-center justify-center"
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <img
-            src="https://img.freepik.com/free-photo/contact-register-feedback-support-help-concept_53876-124243.jpg"
-            alt="Contact Illustration"
-            className="w-full border border-forthary rounded-lg shadow-lg"
-          />
-        </motion.div>
+
       </section>
 
       {/* Map */}
-      <section className="max-w-7xl mx-auto px-4 pb-20">
+      <section className="max-w-7xl mx-auto px-4 p-20">
         <motion.div
-          className="overflow-hidden rounded-xl border border-forthary shadow-lg hover:scale-[1.02] transition-transform duration-300"
+          className="overflow-hidden rounded-xl border border-gray-200 shadow-lg hover:scale-[1.02] transition-transform duration-300"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -142,7 +143,6 @@ const Contact = () => {
           />
         </motion.div>
       </section>
-
     </div>
   );
 };

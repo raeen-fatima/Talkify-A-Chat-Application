@@ -8,36 +8,27 @@ import { FaHandsHelping, FaLightbulb, FaHeart } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <Navbar />
-
-      <section className="bg-[#f9f9f9] min-h-screen relative py-20 flex items-center justify-center">
-      {/* Hero */}
-
-        <motion.div
-          className="backdrop-blur-lg bg-white/70 border border-teritory rounded-xl p-8 md:p-12 max-w-3xl mx-auto text-center shadow-lg"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
+      <div className="bg-gradient-to-br from-[#e0f7fa] via-[#f1f8e9] to-[#fffde7] p-8 pt-24 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold font-rocker text-primary mb-4">
             About Talkify
           </h1>
           <p className="text-gray-700 text-lg">
             The modern communication platform empowering you to connect and collaborate.
           </p>
-        </motion.div>
-      </section>
+      </div>
+      
 
       {/* Our Story */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl font-extrabold text-primary mb-4">Our Story</h2>
+            <h2 className="text-4xl font-extrabold font-rocker text-primary mb-4">Our Story</h2>
             <p className="text-gray-700 text-lg mb-2">
               Founded with a vision to simplify communication, Talkify has grown into a global platform.
             </p>
@@ -48,7 +39,7 @@ const AboutPage = () => {
           <motion.img
             src="https://meritstory.com/wp-content/uploads/2023/06/video-cover-blog-single.jpg"
             alt="Our Story"
-            className="rounded-lg shadow-lg hover:scale-105 border border-light transition-transform duration-300"
+            className="shadow-lg hover:scale-105 border border-gray-200 transition-transform duration-300 "
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -62,7 +53,7 @@ const AboutPage = () => {
           <motion.img
             src="https://thumbs.dreamstime.com/b/card-text-our-mission-white-background-near-office-supplies-alarm-clock-business-card-text-our-mission-231602401.jpg"
             alt="Our Mission"
-            className="rounded-lg shadow-lg border border-light hover:scale-105 transition-transform duration-300"
+            className=" shadow-lg border border-gray-200 hover:scale-105 transition-transform duration-300"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -72,7 +63,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl font-extrabold text-primary mb-4">Our Mission</h2>
+            <h2 className="text-4xl font-extrabold font-rocker text-primary mb-4">Our Mission</h2>
             <p className="text-gray-700 text-lg mb-2">
               To build an inclusive and powerful platform that helps teams thrive.
             </p>
@@ -91,7 +82,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl font-extrabold text-primary mb-4">Our Vision</h2>
+            <h2 className="text-4xl font-extrabold text-primary font-rocker mb-4">Our Vision</h2>
             <p className="text-gray-700 text-lg mb-2">
               We envision a world where distance is irrelevant, and ideas flow freely.
             </p>
@@ -100,9 +91,9 @@ const AboutPage = () => {
             </p>
           </motion.div>
           <motion.img
-            src="https://t3.ftcdn.net/jpg/04/18/52/88/360_F_418528804_xgyFvVsMSHeWk1UgDtR9aoccqSC7BrHy.jpg"
+            src="https://images.unsplash.com/photo-1738152878182-869a3fc9e220?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Our Vision"
-            className="rounded-lg shadow-lg border border-light hover:scale-105 transition-transform duration-300"
+            className=" shadow-lg border border-gray-200 hover:scale-105 transition-transform duration-300"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -113,7 +104,7 @@ const AboutPage = () => {
       {/* Core Values */}
       <section className="py-20 bg-[#f1f8e9]">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-extrabold text-primary mb-12">Our Core Values</h2>
+          <h2 className="text-4xl font-extrabold font-rocker text-primary mb-12">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -134,7 +125,7 @@ const AboutPage = () => {
             ].map((value, index) => (
               <motion.div
                 key={index}
-                className="p-6 bg-white/70 backdrop-blur-md border border-light rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
+                className="p-6 bg-white/70 backdrop-blur-md border border-gray-200 rounded shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -151,7 +142,7 @@ const AboutPage = () => {
       {/* Meet the Team */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-extrabold font-dm_serif  text-primary mb-12">Meet our Team</h2>
+          <h2 className="text-4xl font-extrabold font-rocker text-primary mb-12">Meet our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {["Alice", "Bob", "Charlie"].map((name, index) => (
               <motion.div
@@ -164,7 +155,7 @@ const AboutPage = () => {
                 <img
                   src={`https://i.pravatar.cc/150?img=${index + 5}`}
                   alt={name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-light shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
                 <h3 className="text-lg font-semibold">{name}</h3>
                 <p className="text-gray-300">Team Member</p>
@@ -182,3 +173,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+// This code defines an AboutPage component for a React application. It includes sections for the company's story, mission, vision, core values, and team members, all styled with Tailwind CSS and animated using Framer Motion. The page also features a navigation bar and footer components.

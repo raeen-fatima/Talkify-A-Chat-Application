@@ -1,7 +1,5 @@
 import React from "react";
-import FeaturesSection from "../components/FeatureSection";
 import Pricing from "../components/Pricing";
-import Testimonials from "../components/Testinomals";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
@@ -15,7 +13,7 @@ function ServicePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-44 bg-gradient-to-br from-[#f1f8e9] via-[#e0f7fa] to-[#fffde7] overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#f1f8e9] via-[#e0f7fa] to-[#fffde7] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text */}
           <motion.div
@@ -69,9 +67,9 @@ function ServicePage() {
             transition={{ duration: 0.8 }}
             className="flex justify-center"
           >
-            <div className=" rounded-2xl overflow-hidden shadow-xl border border-primary/80 backdrop-blur-xl bg-white/20">
+            <div className="overflow-hidden shadow-xl  backdrop-blur-xl bg-white/20">
               <img
-                src="https://repository-images.githubusercontent.com/255596263/1d954b80-83ee-11ea-846e-92612af21968"
+                src="https://plus.unsplash.com/premium_photo-1718733279617-b07149780b05?q=80&w=812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Team Collaboration"
                 className="w-full h-full object-cover"
               />
@@ -89,7 +87,7 @@ function ServicePage() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-2xl overflow-hidden shadow-lg border border-primary"
+            className="rounded overflow-hidden "
           >
             <img
               src="https://www.hostpapa.com/blog/app/uploads/2023/05/Best-Chat-Apps-on-The-Internet-Header.jpg"
@@ -105,7 +103,7 @@ function ServicePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
+            <h3 className="text-3xl md:text-4xl font-extrabold font-rocker text-primary mb-4">
               Why Choose Talkify?
             </h3>
             <p className="text-gray-700 text-lg mb-6">
@@ -126,7 +124,7 @@ function ServicePage() {
               ].map((feature, i) => (
                 <motion.div
                   key={i}
-                  className="p-4 bg-white/70 backdrop-blur-lg rounded-lg shadow border border-light/100 hover:scale-105 transition-transform duration-300"
+                  className="p-4 bg-forthary/70 backdrop-blur-lg rounded shadow border border-secondary/100 hover:scale-105 transition-transform duration-300"
                   whileHover={{ scale: 1.05 }}
                 >
                   {feature.icon}
@@ -143,7 +141,7 @@ function ServicePage() {
       <section className="py-20 bg-gradient-to-r from-[#fffde7] via-[#e0f7fa] to-[#f1f8e9]">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <motion.h3
-            className="text-3xl md:text-4xl font-extrabold text-primary mb-10"
+            className="text-3xl md:text-4xl font-rocker font-extrabold text-primary mb-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -170,7 +168,7 @@ function ServicePage() {
             ].map((service, i) => (
               <motion.div
                 key={i}
-                className="p-6 bg-white/70 backdrop-blur-lg rounded-lg shadow-lg border border-light hover:scale-105 transition-transform duration-300"
+                className="p-6 bg-white/70 backdrop-blur-lg rounded shadow-lg border border-light hover:scale-105 transition-transform duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}
@@ -184,18 +182,8 @@ function ServicePage() {
         </div>
       </section>
 
-      <Services />
-
-      {/* Pricing */}
       <Pricing />
-
-      {/* Features */}
-      <FeaturesSection />
-
-
-
-
-      {/* Footer */}
+      <Services />
       <Footer />
     </div>
   );

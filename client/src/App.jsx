@@ -7,6 +7,7 @@ import ContactPage from "./pages/ContactPage";
 import ServicePage from "./pages/ServicePage"; 
 import Login from "./components/Login";
 import Register from "./components/Register";
+import NotFound from "./components/NotFound";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServicePage />} />
+        <Route path="*" element={<NotFound />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

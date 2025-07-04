@@ -54,19 +54,12 @@ const FeaturesSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Top Section: Image & Description */}
         <motion.div
-          className="flex flex-col md:flex-row items-center gap-8 mb-12"
+          className="flex flex-col md:flex-row items-center gap-12 mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex-shrink-0 w-full md:w-1/2 ">
-            <img
-              src="https://st3.depositphotos.com/1092019/12817/i/450/depositphotos_128176210-stock-photo-index-card-with-inscription-features.jpg"
-              alt="Talkify Collaboration"
-              className="rounded-2xl shadow-lg w-full object-cover border border-teritory hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
+          <div className="w-full md:w-1/2 space-y-4  text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800">
               Everything You Need to Communicate
             </h2>
@@ -78,6 +71,14 @@ const FeaturesSection = () => {
             </p>
 
           </div>
+          <div className="flex-shrink-0 w-full md:w-1/2 ">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1743168544863-a4332c717412?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Talkify Collaboration"
+              className=" shadow-lg w-full object-cover border border-transparent hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          
         </motion.div>
         <motion.div
   className="text-center mb-10"
@@ -106,7 +107,7 @@ const FeaturesSection = () => {
             return (
               <motion.div
                 key={index}
-                className="group relative flex flex-col items-center justify-center text-center p-4 w-full aspect-square bg-white/70 backdrop-blur-md border border-light rounded-xl shadow hover:shadow-lg hover:scale-105 transition"
+                className="group relative flex flex-col items-center justify-center text-center p-4 w-full aspect-square bg-forthary/70 backdrop-blur-md border border-light rounded shadow hover:shadow-lg hover:scale-105 transition"
               >
                 <div
                   className={`mb-2 w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br ${feature.color} text-white shadow`}

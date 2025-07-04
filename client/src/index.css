@@ -2,14 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Condiment&family=DM+Serif+Text:ital@0;1&family=Merienda:wght@300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "/node_modules/slick-carousel/slick/slick.css";
 @import "/node_modules/slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Text:ital@0;1&family=New+Rocker&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'DM Serif Text', serif;
-    /* font-family: 'Condiment', cursive; */
+   
+    /* font-family: 'Playfair', serif; */
+    /* font-family: 'DM Serif Text', serif; */
     /* font-family: 'Merienda', cursive; */
     /* font-family: 'Volkhov', serif; */
+    font-family: 'Alegreya', serif;
+    /* font-family: 'Bodoni Moda', serif; */
+    /* font-family: 'New Rocker', cursive; */
+
 }

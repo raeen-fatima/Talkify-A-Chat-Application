@@ -33,7 +33,7 @@ const BlogSection = () => {
     <section className="py-20 bg-gradient-to-br from-[#f1f8e9] via-[#e0f7fa] to-[#fffde7]">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-center text-primary mb-12"
+          className="text-4xl md:text-5xl font-extrabold font-rocker text-center text-primary mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -44,7 +44,7 @@ const BlogSection = () => {
           {blogs.map((blog, index) => (
             <motion.div
               key={blog.id}
-              className="group relative rounded-xl overflow-hidden border border-primary/20 backdrop-blur-md bg-white/60 shadow-lg cursor-pointer"
+              className="group relative  overflow-hidden border border-primary/20 backdrop-blur-md bg-light/60 shadow-lg cursor-pointer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}

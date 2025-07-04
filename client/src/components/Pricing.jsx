@@ -50,8 +50,8 @@ const Pricing = () => {
               key={plan.title}
               className={`relative group rounded-2xl p-6 backdrop-blur-xl transition duration-300 ${
                 plan.highlighted
-                  ? "bg-white/70 border-2 border-primary shadow-xl"
-                  : "bg-white/50 border border-light"
+                  ? "bg-forthary/70 border-2 border-primary shadow-xl"
+                  : "bg-teritory/50 border border-light"
               }`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

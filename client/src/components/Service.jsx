@@ -49,7 +49,7 @@ const Services = () => {
     <section className="py-20 bg-gradient-to-br from-[#e0f7fa] via-[#f1f8e9] to-[#fffde7]">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-center text-primary mb-16"
+          className="text-4xl md:text-5xl font-extrabold font-rocker text-center text-primary mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -63,7 +63,7 @@ const Services = () => {
             return (
               <motion.div
                 key={i}
-                className="group relative bg-white/60 backdrop-blur-lg border border-light rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-[1.03] transition-transform duration-300 overflow-hidden"
+                className="group relative bg-forthary/60 backdrop-blur-lg border border-secondary rounded shadow-lg p-6 flex flex-col items-center text-center hover:scale-[1.03] transition-transform duration-300 overflow-hidden"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
