@@ -107,7 +107,7 @@ const FeaturesSection = () => {
             return (
               <motion.div
                 key={index}
-                className="group relative flex flex-col items-center justify-center text-center p-4 w-full aspect-square bg-forthary/70 backdrop-blur-md border border-light rounded shadow hover:shadow-lg hover:scale-105 transition"
+                className="group relative flex flex-col items-center justify-center text-center p-4 w-full aspect-square bg-light/70 backdrop-blur-md border border-light  shadow hover:shadow-lg hover:scale-105 transition"
               >
                 <div
                   className={`mb-2 w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br ${feature.color} text-white shadow`}

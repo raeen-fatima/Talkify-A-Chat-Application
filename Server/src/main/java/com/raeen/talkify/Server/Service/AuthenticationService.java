@@ -17,18 +17,17 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class AuthenticationService {
 
-@Autowired
-UserRepository userRepository;
+    @Autowired
+    UserRepository userRepository;
 
-@Autowired
-PasswordEncoder passwordEncoder;
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
-@Autowired
-JwtService jwtService;
+    @Autowired
+    JwtService jwtService;
 
-@Autowired
-AuthenticationManager authenticationManager;
-
+    @Autowired
+    AuthenticationManager authenticationManager;
 
     // Register method
     public AuthResponse register(User request) {
@@ -50,7 +49,9 @@ AuthenticationManager authenticationManager;
         userRepository.save(request);
 
         String token = jwtService.generateToken(request.getEmail());
-        return new AuthResponse(token);
+
+        // IMPORTANT: Return both token and saved user
+        return new AuthResponse(token, request);
     }
 
     // Login method
@@ -74,6 +75,8 @@ AuthenticationManager authenticationManager;
         }
 
         String token = jwtService.generateToken(user.getEmail());
-        return new AuthResponse(token);
+
+        // IMPORTANT: Return both token and user
+        return new AuthResponse(token, user);
     }
 }

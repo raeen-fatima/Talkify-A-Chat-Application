@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+
+import com.raeen.talkify.Server.DTO.ChatMessage;
 import com.raeen.talkify.Server.DTO.MessageStatusUpdate;
 import java.util.List;
 
@@ -20,11 +22,13 @@ public class MessageController {
 
 
     @PostMapping("/send")
-    public Message sendMessage(@RequestParam Long senderId,
-                               @RequestParam Long receiverId,
-                               @RequestParam String content) {
-        return messageService.saveMessage(senderId, receiverId, content);
-    }
+public Message sendMessage(@RequestBody ChatMessage message) {
+    return messageService.saveMessage(
+        message.getSenderId(),
+        message.getReceiverId(),
+        message.getContent()
+    );
+}
 
     @GetMapping("/conversation")
     public List<Message> getConversation(@RequestParam Long senderId,

@@ -124,7 +124,7 @@ function ServicePage() {
               ].map((feature, i) => (
                 <motion.div
                   key={i}
-                  className="p-4 bg-forthary/70 backdrop-blur-lg rounded shadow border border-secondary/100 hover:scale-105 transition-transform duration-300"
+                  className="p-4 bg-light/70 backdrop-blur-lg rounded shadow border border-secondary/100 hover:scale-105 transition-transform duration-300"
                   whileHover={{ scale: 1.05 }}
                 >
                   {feature.icon}

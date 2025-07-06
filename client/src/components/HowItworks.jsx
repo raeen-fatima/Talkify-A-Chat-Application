@@ -56,7 +56,7 @@ const HowItWorks = () => {
             return (
               <motion.div
                 key={index}
-                className="relative bg-teritory/60 backdrop-blur-xl border border-teritory rounded p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl transition-all cursor-pointer group"
+                className="relative bg-light/40 backdrop-blur-xl border border-light/30 p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl transition-all cursor-pointer group"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.05, y: -4 }}

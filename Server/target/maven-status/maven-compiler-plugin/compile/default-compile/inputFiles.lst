@@ -28,6 +28,7 @@ D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\DTO\MessageSta
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Controller\AuthController.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\DTO\AuthResponse.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Model\GroupMessage.java
+D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Controller\UserController.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\DTO\GroupChatMessage.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\Repository\GroupMemberRepository.java
 D:\PROJECTS\Talkify\Server\src\main\java\com\raeen\talkify\Server\ServerApplication.java

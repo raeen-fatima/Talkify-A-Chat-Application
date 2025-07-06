@@ -73,7 +73,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="relative bg-light  shadow-lg p-8 md:p-10 flex flex-col items-center text-center border border-primary/80 backdrop-blur-lg ">
+              <div className="relative bg-light/60  shadow-lg p-8 md:p-10 flex flex-col items-center text-center border border-primary/80 backdrop-blur-lg ">
                 <FaQuoteLeft className="text-primary text-3xl mb-4" />
                 <p className="text-gray-700 text-lg mb-6">{t.text}</p>
                 <div className="flex items-center gap-4">

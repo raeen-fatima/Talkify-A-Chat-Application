@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="flex justify-center gap-4 flex-wrap">
             <motion.div whileHover={{ scale: 1.05 }}>
               <Link
-                to="/register"
+                to="/dashboard"
                 className="inline-block px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-secondary transition"
               >
                 Get Started
